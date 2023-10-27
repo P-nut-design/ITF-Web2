@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+.content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.profile_img {
+    margin-top: 70px;
+    background-color: gray;
+    border-radius: 999px;
+    width: 192px;
+    height: 192px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.dot {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    background-color: red;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    right: 0;
+    bottom: 0;
+    font-size: x-large;
+    color: white;
+    font-weight: 600;
+}
+.input_group {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+
+}
+.gallery {
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 25px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px);
+}
+.gallery_item {
+    background-color: gray;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+}
+.col_span {
+    grid-column: span 2 / span 2;
+}
+.row_span {
+    grid-row: span 2 / span 2;
+}
+.onhover {
+    text-decoration: none;
+    color: white;
+}
+.onhover:hover {
+    text-decoration: none;
+    color: red;
+}
